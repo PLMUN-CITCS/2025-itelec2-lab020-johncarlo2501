@@ -1,10 +1,6 @@
-n = int(input("Enter a non-negative integer: "))
+number = int(input("Enter an integer: "))
 
-if n < 0:
-    print("Please enter a non-negative integer.")  
+if number % 2 == 0:
+    print(f"{number} is an Even number.")
 else:
-    factorial = 1
-    for i in range(1, n + 1):  
-        factorial *= i
-
-    print(f"The factorial of {n} is: {factorial}")
+    print(f"{number} is an Odd number.")
